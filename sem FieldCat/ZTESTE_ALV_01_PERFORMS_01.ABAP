@@ -30,11 +30,10 @@ FORM impressao_alv.
       t_outtab                          = tabela_interna_sflight
    EXCEPTIONS
      PROGRAM_ERROR                     = 1
-     OTHERS                            = 2
-            .
+     OTHERS                            = 2.
+     
   IF sy-subrc <> 0.
 * Implement suitable error handling here
   ENDIF.
-
 
 ENDFORM.                    "impressao_alv
